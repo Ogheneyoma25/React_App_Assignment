@@ -1,26 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import SMS from './components/SMS';
+import URL from './components/URL';
+import Email from './components/Email';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+const App: React.FC = () => {
+ return (
+ <div className="Container">
+ <div className="Column1">
+   <SMS />
+   </div>
+   <div className="Column2">
+     <URL />
+   </div>
+   <div className="Column3">
+     <Email />
+   </div>
+</div>
+ );
 }
 
 export default App;
+ 
